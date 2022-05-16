@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+    margin: 15px auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*button style*/
+button{
+    background-color: rgb(82, 116, 139);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 45px;
+    color: rgb(235, 246, 253);
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: .5s;
+}
+button span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+button:hover span {
+    padding-right: 15px;
+    padding-left: 5px;
+  }
+  
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+/*navbar style*/
+nav{
+    padding: 10px;
+}
+.logo{
+    height: auto;
+    width: 160px;
+    margin-top: 20px;
+    position: relative;
+}
+.navigation{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    margin-top: 38px;
+}
+nav a{
+    padding: 6px;
+}
+nav a:hover{
+    background-color: rgb(199, 230, 250);
+}
+
+/*header starts here*/
+#container {
+    box-shadow: 10px 5px 5px rgb(187, 187, 187);
+    height: 600px;
+    background: url("https://media.istockphoto.com/photos/artificial-insemination-picture-id868254530?s=2048x2048");
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+header {
+    max-width: 800px;
+    line-height: 40px;
+    margin: 10px auto;
+    padding-top: 170px;
+}
+/*about the software starts*/
+#about{
+    margin: 50px auto;
+    padding: 20px;
+    width: 70vw;
+}
+.about-icon-txt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 30px auto;
+}
+.icon-txt{
+    gap: 20px;
+    width: 250px;
+    margin-left: 0;
+    text-align: center;
+}
+.material-icons, .fa{
+    font-size: 50px;
+}
+/*Contact style*/
+#contact{
+    margin: 50px auto;
+    width: 70vw;
+}
+.all-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    gap: 10px;
+}
+.contact-title{
+    font-weight: 550;
+}
+#contact h2{
+    text-align: left;
+}
+.address{
+    line-height: 25px;
+}
+.billing, .product-support{
+    line-height: 40px;
+    margin-top: -10px;
+}
+#contact a:hover {
+    text-decoration: underline;
+    color: rgb(112, 112, 206);
+
+}
+/*footer style*/
+.copyright{
+    max-height: 2rem;
+    width: 70vw;
+    margin: 0 auto;
+}
