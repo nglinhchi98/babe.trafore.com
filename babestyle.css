@@ -14,6 +14,10 @@ h2{
     margin: 15px auto;
     color: white;
 }
+h3 {
+    color: white;
+    padding: 4px 0;
+}
 a{
     text-decoration: none;
     color: #23365d;
@@ -191,13 +195,27 @@ header p{
     line-height: 25px;
     padding-bottom: 15px;
 }
-.modules-grid {
+.module-grid {
     display: grid;
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 15px;
+    column-gap: 15px;
+    grid-template-columns: auto auto;
 }
 .grid-item {
     width: 150px;
+    height: 170px;
+    padding: 10px;
+    background-color: #23365d;
+    text-align: center;
+}
+.grid-item img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+}
+.item-style h3 {
+    padding-bottom: 35px;
 }
 /*divide line with text and button*/
 .div-button {
@@ -208,6 +226,7 @@ header p{
     border-radius: 80px;
     padding: 8px 15px;
     margin: 40px auto;
+    border-bottom: solid 1px ;
 }
 
 .div-button p {
