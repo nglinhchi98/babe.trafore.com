@@ -18,7 +18,7 @@
     <div class="navigation">
         <img src="images/Babe-logo.svg" alt="babe-logo" class="logo">
         <nav class="nav-bar"> 
-            <ul>
+            <ul class="nav-links">
                 <li><a href="">Home</a></li>
                 <li><a href="">Product & Features</a></li>
                 <li><a href="">Contact</a></li>
@@ -47,7 +47,7 @@
     <section id="about-babe">
         <section class="intro-img">
             <div class="introduction">
-                <h2>About Babe ART</h2>
+                <h2>About Babe ART</h2><hr>
                 <p>Babe ART is a database management system for fertility treatment clinics. Our software relates patients, treatment, 
                 laboratory data and outcomes together. Babe is developed and supported by Finnish fertility specialists since 1996.</p>
                 <div class="icon-txt">
@@ -63,20 +63,25 @@
                     <p>Customisable based on your needs</p>
                 </div>
             </div>
-            <div class="couple-img">
-                <img src="images/couple-img.jpeg" alt="couples and doctor">
-            </div>
+            <div class="couple-img"> </div>
         </section>
 <!--Integrated Modules starts here-->
         <div class="modules">
+            <div class="module-txt">
+                <h2>Integrated Modules</h2>
+                <p>We focus on developing tools that support the clinic daily operations, 
+                    simplify the documentation process, and increase staff productivity.
+                </p>
+                <button><a href=""><span> View modules</span> </a></button>
+            </div>
             <div class="module-grid">
                 <div class="grid-item">
                     <h3>Registry management</h3>
-                    <img src="images/icon1.png" alt="registry icon">
+                    <img id="icon-style" src="images/icon1.png" alt="registry icon">
                 </div>
                 <div class="grid-item">
                     <h3>Laboratory management</h3>
-                    <img src="images/icon3.png" alt="laboratory icon">
+                    <img id="icon-style" src="images/icon3.png" alt="laboratory icon">
                 </div>
                 <div class="grid-item">
                     <h3>Fertility treatments management</h3>
@@ -87,13 +92,6 @@
                     <img src="images/icon2.png" alt="other clinic management">
                 </div>
             </div>
-            <div class="module-txt">
-                <h2>Integrated Modules</h2>
-                <p>We focus on developing tools that support the clinic daily operations, 
-                    simplify the documentation process, and increase staff productivity.
-                </p>
-                <button><a href=""><span> View modules</span> </a></button>
-            </div>
         </div>
     </section>
 <!--division button "Considering babe for your clinic"-->
@@ -101,7 +99,6 @@
         <p id="div-text"><strong>Considering Babe for your clinic?</strong></p>
         <button><a href=""><span>Request a demo now</span></a></button>
     </div>
-
 <!--data presentation starts here-->
     <section class="statistics">
         <h2>Customisable, international solution</h2>
@@ -130,7 +127,9 @@
     <section class="all-contact">
             <div class="address">
                 <p class="contact-title" href="">MAIN OFFICE</p>
-                <a href="https://www.trafore.com/">Trafore Oy <br> Arkadiankatu 7, 00100 Helsinki</a>
+                <p><a href="https://www.trafore.com/">Trafore Oy</a> <br> Arkadiankatu 7, 00100 Helsinki </p>
+                <p><a href="">Privacy Policy</a></p>
+                <p><a href="https://www.trafore.com/cookies.html">Cookies</a></p>
             </div>
             <div class="billing">
                 <p class="contact-title">BILLING SUPPORTS</p>
@@ -149,4 +148,5 @@
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
