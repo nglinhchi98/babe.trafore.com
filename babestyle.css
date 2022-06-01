@@ -110,7 +110,8 @@ nav a{
     margin: 5px auto;
 }
 header {
-    padding: 100px ;
+    padding: 130px;
+    justify-content: center;
 }
 header h1{
     padding-bottom: 30px;
@@ -151,7 +152,7 @@ header p{
         transform: translateY(-8px) rotate(-45deg);
     }
     .nav-links{
-        position: fixed;
+        position: absolute;
         gap: 0;
         flex-direction: column;
         background-color: white;
@@ -433,6 +434,7 @@ header p{
 .contact-title {
     font-weight: 700;
 }
+
 /*footer style*/
 footer {
     background-color: #23365d;
@@ -441,4 +443,15 @@ footer {
     max-height: 2rem;
     padding: 0px 150px 20px;
     font-style: italic;
+}
+@media (max-width: 846px) {
+    .all-contact {
+        padding: 40px;
+    }
+    .copyright {
+        padding: 0px 40px 20px;
+    }
+    .copyright p {
+        font-size: 14px;
+    }
 }
