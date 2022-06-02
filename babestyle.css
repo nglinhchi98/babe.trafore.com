@@ -35,6 +35,12 @@ span {
     color: white;
     font-weight: 700;
 }
+hr {
+    color: white;
+    border: solid white 0.5px;
+    margin-bottom: 5px;
+}
+
 /*button style*/
 button{
     background-color: #00c2cb;
@@ -110,7 +116,7 @@ nav a{
     margin: 5px auto;
 }
 header {
-    padding: 130px;
+    padding: 100px;
     justify-content: center;
 }
 header h1{
@@ -209,7 +215,7 @@ header p{
     padding: 50px 0;
 }
 .introduction{
-    padding: 20px 30px 0 100px;
+    padding: 20px 50px 0 100px;
     line-height: 30px;
 }
 .couple-img {
@@ -231,18 +237,34 @@ header p{
     margin: 20px auto;
     justify-content: center;
 }
-/*Grid and text*/
+/*Grid and collapsible text*/
 .modules {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 80px;
-    padding: 20px 30px 0 40px;
-    margin: 40px 0 80px;
+    margin: 10px 0 80px;
     justify-content: center;
 }
+.collapsible {
+    background-color: #23365d;
+    box-shadow: none;
+    border: none;
+    font-size: 30px;
+    height: fit-content;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    outline: none;
+}
+.active, .collapsible:hover {
+    color: #00c2cb;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 .module-txt {
-    width: 400px;
-    margin-top: -15px;
+    padding: 20px 50px 0 100px;
 }
 .module-txt p{
     line-height: 25px;
@@ -252,19 +274,20 @@ header p{
     display: grid;
     row-gap: 15px;
     column-gap: 15px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    padding: 30px 30px 0px 100px;
 }
 .grid-item {
-    width: 150px;
-    height: 170px;
+    width: 250px;
+    min-height: 170px;
     padding: 10px;
     background-color: #23365d;
     text-align: center;
 }
 .grid-item img {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     margin-top: 10px;
 }
 #icon-style {
@@ -273,6 +296,7 @@ header p{
 @media (max-width: 1416px) {
     .module-grid {
         grid-template-columns: auto auto;
+        padding-left: 50px;
     }
     header {
         padding-left: 50px;
@@ -280,15 +304,15 @@ header p{
     .introduction {
         padding-left: 50px;
     }
+    .module-txt {
+        padding-left: 50px;
+    }
 }
 @media (max-width: 1005px) {
     .module-grid {
         grid-template-columns: auto auto auto auto;
     }
-    .module-txt {
-        width: 100%;
-        padding-left: 8px;
-    }
+
 }
 @media (max-width: 830px) {
     .module-grid {
@@ -362,7 +386,7 @@ header p{
 /*data style*/
 .statistics {
     margin: 100px auto;
-    padding: 0 30px;
+    padding: 50px 30px;
 }
 .statistics h2 {
     color: #23365d;
@@ -404,17 +428,22 @@ header p{
 #happy-ending {
     background: url("images/happy-couple.jpg") no-repeat center;
     background-size: cover;
-    text-align: center;
 }
 #happy-ending h2 {
     color: #23365d;
 }
 .layer{
     background: rgba(255, 255, 255, 0.6);
-    padding: 100px;
-
+    padding: 30px;
+    justify-content: space-between;
 }
-
+.col2 {
+    width: 40vw;
+    margin: 10px auto;
+}
+.col1 {
+    text-align: center;
+}
 /*contact*/
 .all-contact {
     background-color: #23365d;
@@ -434,7 +463,76 @@ header p{
 .contact-title {
     font-weight: 700;
 }
+/*contact form*/
+.form-field{
+    display: block;
+    width: calc(100% - 15px);
+    height: 32px;
+    margin-top: 15px;
+    padding: 8px;
+    padding-left: 15px;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+}
+.form-field::placeholder{
+    font-size: 13px;
+}
+textarea{
+    min-height: 60px;
+    font-family: inherit;
+    resize: vertical;
+    max-height: 300px;
+    margin-bottom: 15px;
+}
+.success, .fail{
+    font-style: italic;
+    display: none;
+    padding-top: 7px;
+    transition: .2s;
+    animation: buttonclick .2s linear; 
+    position: absolute;
+    font-size: 12px;
+}
+.success{
+    color: green;
+}
+.fail {
+    color: red;
+}
+@keyframes buttonclick {
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 
+/*radio selection*/
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #23365d;
+    align-items: center;
+    margin-right: 10px;
+    display: flex;
+}
+.radio-selection {
+    margin-top: 10px;
+}
+.radio-input {   
+    display: inline-block;
+    margin-right: 7px;
+}
+@media (max-width: 768px) {
+    .col2 {
+        width: auto;
+    }
+}
 /*footer style*/
 footer {
     background-color: #23365d;
@@ -454,5 +552,5 @@ footer {
     .copyright p {
         font-size: 14px;
     }
-    
+
 }
