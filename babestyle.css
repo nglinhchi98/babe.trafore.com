@@ -256,12 +256,22 @@ header p{
 .active, .collapsible:hover {
     color: #00c2cb;
 }
-
 .content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
+    padding: 12px 18px 20px;
     transition: max-height 0.2s ease-out;
+    grid-column: 1/-1;
+    line-height: 30px;
+    background-color: #23365d;
+}
+.close-btn {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: none;
+    padding: 10px 14px;
+}
+.is-hidden {
+    display: none;
 }
 .module-txt {
     padding: 20px 50px 0 100px;
@@ -272,13 +282,13 @@ header p{
 }
 .module-grid {
     display: grid;
-    row-gap: 15px;
-    column-gap: 15px;
-    grid-template-columns: auto auto auto;
+    gap: 15px;
     padding: 30px 30px 0px 100px;
+    grid-template-columns: repeat(auto-fit, 18rem);
+    justify-content: center;
+    grid-auto-flow: dense;
 }
 .grid-item {
-    width: 250px;
     min-height: 170px;
     padding: 10px;
     background-color: #23365d;
@@ -295,7 +305,6 @@ header p{
 }
 @media (max-width: 1416px) {
     .module-grid {
-        grid-template-columns: auto auto;
         padding-left: 50px;
     }
     header {
@@ -308,21 +317,9 @@ header p{
         padding-left: 50px;
     }
 }
-@media (max-width: 1005px) {
-    .module-grid {
-        grid-template-columns: auto auto auto auto;
-    }
 
-}
-@media (max-width: 830px) {
-    .module-grid {
-        grid-template-columns: auto auto;
-    }
-}
 @media (max-width: 430px) {
-    .module-grid {
-        grid-template-columns: auto;
-    }
+
     h1 {
         font-size: 36px;
     }
