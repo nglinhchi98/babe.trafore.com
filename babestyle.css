@@ -305,7 +305,7 @@ header p{
 }
 @media (max-width: 1416px) {
     .module-grid {
-        padding-left: 50px;
+        padding-left: 32px;
     }
     header {
         padding-left: 50px;
