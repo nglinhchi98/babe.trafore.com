@@ -382,7 +382,7 @@ header p{
 }
 /*data style*/
 .statistics {
-    margin: 100px auto;
+    margin-bottom: 100px;
     padding: 50px 30px;
 }
 .statistics h2 {
