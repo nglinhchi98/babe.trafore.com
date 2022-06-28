@@ -299,6 +299,7 @@ header p{
     border-radius: 50%;
     box-shadow: none;
     padding: 10px 14px;
+    cursor: pointer;
 }
 .is-hidden {
     display: none;
