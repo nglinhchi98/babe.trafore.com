@@ -200,6 +200,14 @@
                     </div>
                     <textarea class="form-field" placeholder="Your message*" maxlength="5000" id="message" required></textarea>
                     <p style="color: red; font-style: italic; font-size: 12px; margin-bottom: 10px; font-weight: 600;">* required fields</p>
+                    <div
+                                    class="g-recaptcha"
+                                    data-sitekey="6LeyVqwgAAAAACzoWjedkTD1koLxKqaCT8At2LCp"                                   
+                                    data-callback="onRecaptchaSuccess"
+                                    data-expired-callback="onRecaptchaResponseExpiry"
+                                    data-error-callback="onRecaptchaError"
+                                    >
+                    </div>
                     <button  value="Send Message" class="submit-button">Send Message</button>
                 </form>
                 <div class="success" id="success">Your message has been sent succesfully!</div>
@@ -233,4 +241,5 @@
     </footer>
 </body>
 <script src="script.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </html>
