@@ -22,7 +22,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#features">Product & Features</a></li>
                 <li><a href="#happy-ending">Contact</a></li>
-                <button class="first-btn"><a href="#happy-ending">Resquest a demo</a></button>
+                <button class="first-btn"><a href="#happy-ending">Request a demo</a></button>
             </ul>
             <!--hamburger menu-->
             <div class="hamburger">
@@ -100,7 +100,8 @@
                 <div class="content fullwidth is-hidden">
                     <button class="close-btn" type="button" data-close>&#10005;</button>
                     <p><strong>Laboratory management</strong></p>
-                    <p></p>
+                    <p>A complete package covers all of the key requirements to manage an Assisted Reproductive Technology clinic.
+                    Some highlighted features include Sperm Storage, Egg Bank, Cells Store, Embryo Storage, etc. </p>
                 </div>
                 
                 <div class="grid-item" id="quickview">
@@ -200,10 +201,19 @@
                     <textarea class="form-field" placeholder="Your message*" maxlength="5000" id="message" required></textarea>
                     <p style="color: red; font-style: italic; font-size: 12px; margin-bottom: 10px; font-weight: 600;">* required fields</p>
                     <button value="Send Message" class="submit-button">Send Message</button>
+
+                    <div
+                                    class="g-recaptcha"
+                                    data-sitekey="6LeyVqwgAAAAACzoWjedkTD1koLxKqaCT8At2LCp"                                   
+                                    data-callback="onRecaptchaSuccess"
+                                    data-expired-callback="onRecaptchaResponseExpiry"
+                                    data-error-callback="onRecaptchaError"
+                                    >
+                    </div>
+                    <button  value="Send Message" class="submit-button">Send Message</button>
                 </form>
                 <div class="success" id="success">Your message has been sent succesfully!</div>
                 <div class="fail" id="fail">Please fill in required fields</div>
-                </form>
             </div>
         </div>
     </section>
@@ -233,4 +243,5 @@
     </footer>
 </body>
 <script src="script.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </html>
