@@ -384,6 +384,7 @@ header p{
     flex-wrap: wrap;
     gap: 60px;
     margin-top: 80px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 .clinic-data, .country-data {
